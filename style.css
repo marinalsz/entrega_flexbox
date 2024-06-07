@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap");
+
+:root{
+    --background: #fbe56f;
+    --color: #21252a;
+    --spacing: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Familjen Grotesk", sans-serif;
+}
+
+body{
+    background-color: var(--background);
+    color: var(--color);
+    padding: var(--spacing);
+}
+
+a {
+    text-decoration: none;
+  }
+
+
+nav{
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a{
+    text-transform: uppercase;
+}
