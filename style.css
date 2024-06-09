@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap");
 
-:root{
-    --background: #fbe56f;
-    --color: #21252a;
-    --spacing: 20px;
+:root {
+  --background: #ffe845;
+  --color: #21252a;
+  --spacing: 10px;
 }
 
 * {
@@ -13,24 +13,75 @@
   font-family: "Familjen Grotesk", sans-serif;
 }
 
-body{
-    background-color: var(--background);
-    color: var(--color);
-    padding: var(--spacing);
+body {
+  background-color: var(--background);
+  color: var(--color);
+  padding: var(--spacing);
+}
+
+h2{
+    text-align: center;
+
+}
+
+ul {
+  list-style-type: none;
 }
 
 a {
-    text-decoration: none;
-  }
-
-
-nav{
-    border: 2px solid red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  text-decoration: none;
 }
 
-nav a{
-    text-transform: uppercase;
+/* HEADER */
+header {
+  height: 100px;
+}
+
+header > nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+header .bird {
+  font-style: italic;
+  font-weight: 200px;
+  font-size: 30px;
+}
+
+header ul {
+  display: flex;
+  gap: var(--spacing);
+  border: 2px solid red;
+}
+
+header a:hover {
+  font-weight: bold;
+}
+
+.testimonials{
+    
+    padding: var(--spacing);
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial{
+    border: 2px solid red;
+    background-color: aliceblue;
+}
+
+.testimonial img{
+    width: 100px;
+}
+
+/* FOOTER */
+
+footer {
+  padding: var(--spacing);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing);
+  justify-content: space-around;
 }
