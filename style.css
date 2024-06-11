@@ -46,6 +46,12 @@ button {
   cursor: pointer;
 }
 
+span{
+  font-style: italic;
+  font-size: 50px;
+  color: #FF5733;
+}
+
 /* HEADER */
 
 header {
@@ -80,7 +86,7 @@ header > nav > ul > li > a:hover {
 main {
   border-bottom: 3px solid black;
   padding: var(--spacing);
-  min-height: 550px;
+  min-height: 600px;
   display: flex;
   align-items: center;
 }
@@ -122,6 +128,47 @@ main {
   background-color: var(--background-img);
   border: 3px solid black;
   border-radius: 15px;
+}
+/*SECTION RECIPES*/
+
+.recipes {
+  min-height: 500px;
+  border-bottom: 3px solid black;
+  padding: var(--spacing);
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  gap: var(--spacing);
+  background-color: var(--background-img);
+}
+
+.recipes h2{
+  text-transform: uppercase;
+}
+
+.recipe{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: var(--spacing);
+  padding: var(--spacing);
+}
+
+.card-recipe{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing);
+  padding: var(--spacing);
+  border-radius: 15px;
+}
+
+.card-recipe img{
+  border: 3px solid black;
+  border-radius: 15px;
+  width: 90%;
 }
 
 /*SECTION TESTIMONIALS*/
