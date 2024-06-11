@@ -20,6 +20,12 @@ body {
   border: 3px solid black;
 }
 
+h1{
+  font-style: italic;
+  font-weight: 200px;
+  font-size: 30px;
+}
+
 h2 {
   text-align: center;
 }
@@ -36,25 +42,30 @@ a {
 /* HEADER */
 
 header {
-  height: 100px;
+  height: 80px;
   border-bottom: 3px solid black;
-  
+  padding: var(--spacing);
+  text-transform: uppercase;
 }
 
-
-.menu {
-  display: none;
-  width: 30px;
-  height: 30px;
+header > nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing);
 }
 
-@media (max-width: 500px) {
-  .nav-list {
-    display: none;
-  }
-  .menu {
-    display: block;
-  }
+header ul{
+  display: flex;
+  gap: var(--spacing);
+}
+
+header > nav > ul > li > a{
+  font-size: 20px;
+}
+
+header > nav > ul > li > a:hover{
+  font-weight: bold;
 }
 
 /*HERO*/
