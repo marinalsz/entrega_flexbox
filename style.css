@@ -46,10 +46,10 @@ button {
   cursor: pointer;
 }
 
-span{
+span {
   font-style: italic;
   font-size: 50px;
-  color: #FF5733;
+  color: #ff5733;
 }
 
 /* HEADER */
@@ -61,24 +61,46 @@ header {
   text-transform: uppercase;
 }
 
-header > nav {
+.visible {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: var(--spacing);
 }
 
-header ul {
+.visible > ul {
   display: flex;
   gap: var(--spacing);
 }
 
-header > nav > ul > li > a {
+.visible a {
   font-size: 20px;
 }
 
-header > nav > ul > li > a:hover {
+.visible a:hover {
   font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 769px) {
+  .visible {
+    display: none;
+  }
+
+  .hidden {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: var(--spacing);
+  }
+
+  .hidden img {
+    width: 40px;
+    cursor: pointer;
+  }
 }
 
 /*MAIN*/
@@ -86,7 +108,7 @@ header > nav > ul > li > a:hover {
 main {
   border-bottom: 3px solid black;
   padding: var(--spacing);
-  min-height: 600px;
+  min-height: 647px;
   display: flex;
   align-items: center;
 }
@@ -138,17 +160,17 @@ main {
   padding: var(--spacing);
   display: flex;
   flex-direction: column;
-  justify-content:center;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
   gap: var(--spacing);
   background-color: var(--background-img);
 }
 
-.recipes h2{
+.recipes h2 {
   text-transform: uppercase;
 }
 
-.recipe{
+.recipe {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -156,7 +178,7 @@ main {
   padding: var(--spacing);
 }
 
-.card-recipe{
+.card-recipe {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -166,7 +188,7 @@ main {
   border-radius: 15px;
 }
 
-.card-recipe img{
+.card-recipe img {
   border: 3px solid black;
   border-radius: 15px;
   width: 90%;
@@ -180,16 +202,16 @@ main {
   padding: var(--spacing);
   display: flex;
   flex-direction: column;
-  justify-content:center;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
   gap: var(--spacing);
 }
 
-.testimonials h2{
+.testimonials h2 {
   text-transform: uppercase;
 }
 
-.testimonial{
+.testimonial {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -197,7 +219,7 @@ main {
   padding: var(--spacing);
 }
 
-.card{
+.card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -209,11 +231,11 @@ main {
   border-radius: 15px;
 }
 
-.card img{
+.card img {
   width: 50%;
 }
 
-.card p{
+.card p {
   text-align: center;
 }
 
