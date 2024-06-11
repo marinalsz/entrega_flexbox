@@ -20,14 +20,10 @@ body {
   border: 3px solid black;
 }
 
-h1{
+h1 {
   font-style: italic;
   font-weight: 200px;
   font-size: 30px;
-}
-
-h2 {
-  text-align: center;
 }
 
 ul {
@@ -39,6 +35,17 @@ a {
   color: var(--color);
 }
 
+button {
+  background-color: var(--color);
+  color: var(--background);
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: var(--spacing);
+  font-size: 15px;
+  cursor: pointer;
+}
+
 /* HEADER */
 
 header {
@@ -48,71 +55,74 @@ header {
   text-transform: uppercase;
 }
 
-header > nav{
+header > nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: var(--spacing);
 }
 
-header ul{
+header ul {
   display: flex;
   gap: var(--spacing);
 }
 
-header > nav > ul > li > a{
+header > nav > ul > li > a {
   font-size: 20px;
 }
 
-header > nav > ul > li > a:hover{
+header > nav > ul > li > a:hover {
   font-weight: bold;
+}
+
+/*MAIN*/
+
+main {
+  border-bottom: 3px solid black;
+  padding: var(--spacing);
+  min-height: 550px;
+  display: flex;
+  align-items: center;
 }
 
 /*HERO*/
 
 .hero {
   display: flex;
-  align-items: center;
-  min-height: 100svh;
   justify-content: space-around;
+  align-items: center;
+  gap: var(--spacing);
+  padding: var(--spacing);
 }
 
 .info {
-  width: 40%;
-  min-width: 500px;
+  padding: var(--spacing);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: var(--spacing);
 }
 
 .info > h2 {
   font-size: 40px;
-}
-
-.hero img {
-  width: 30%;
-  max-width: 500px;
-  min-width: 250px;
-  background-color: var(--background-img);
-  border: 2px solid black;
-  border-radius: 15px;
+  font-style: italic;
 }
 
 .buttons {
+  padding: var(--spacing);
   display: flex;
-  margin-top: 20px;
-  gap: 30px;
+  gap: 50px;
 }
 
-button {
-  background-color: var(--color);
-  color: var(--background);
-  border: none;
-  border-radius: 5px;
-  padding: var(--spacing);
-  font-size: 15px;
-  cursor: pointer;
+.hero img {
+  background-color: var(--background-img);
+  border: 3px solid black;
+  border-radius: 15px;
 }
 
 .testimonials {
-  border: 2px dashed coral;
   padding: var(--spacing);
   margin: var(--spacing);
   width: 100%;
@@ -123,7 +133,6 @@ button {
 }
 
 .testimonial {
-  border: 2px solid red;
   padding: var(--spacing);
   background-color: var(--background-img);
   flex-direction: column;
