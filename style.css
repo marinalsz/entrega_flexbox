@@ -3,7 +3,7 @@
 :root {
   --background: #ffe845;
   --color: #21252a;
-  --background-button: #ffffff;
+  --background-img: #ffffff;
   --spacing: 10px;
 }
 
@@ -11,13 +11,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Familjen Grotesk", sans-serif;
 }
 
 body {
   background-color: var(--background);
   color: var(--color);
-  padding: var(--spacing);
+  font-family: "Familjen Grotesk", sans-serif;
+  border: 3px solid black;
 }
 
 h2 {
@@ -37,28 +37,24 @@ a {
 
 header {
   height: 100px;
+  border-bottom: 3px solid black;
+  
 }
 
-header > nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-transform: uppercase;
+
+.menu {
+  display: none;
+  width: 30px;
+  height: 30px;
 }
 
-header .bird {
-  font-style: italic;
-  font-weight: 200px;
-  font-size: 30px;
-}
-
-header ul {
-  display: flex;
-  gap: var(--spacing);
-}
-
-header a:hover {
-  font-weight: bold;
+@media (max-width: 500px) {
+  .nav-list {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
 }
 
 /*HERO*/
@@ -83,7 +79,7 @@ header a:hover {
   width: 30%;
   max-width: 500px;
   min-width: 250px;
-  background-color: #ffffff;
+  background-color: var(--background-img);
   border: 2px solid black;
   border-radius: 15px;
 }
@@ -118,7 +114,7 @@ button {
 .testimonial {
   border: 2px solid red;
   padding: var(--spacing);
-  background-color: aliceblue;
+  background-color: var(--background-img);
   flex-direction: column;
   display: flex;
   align-items: center;
