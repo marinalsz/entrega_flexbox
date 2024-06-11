@@ -110,12 +110,14 @@ main {
   padding: var(--spacing);
   min-height: 647px;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
 /*HERO*/
 
 .hero {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -160,7 +162,7 @@ main {
   padding: var(--spacing);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   gap: var(--spacing);
   background-color: var(--background-img);
@@ -168,24 +170,23 @@ main {
 
 .recipes h2 {
   text-transform: uppercase;
+  padding: var(--spacing);
+  font-size: 30px;
 }
 
 .recipe {
+  border: 2px solid blue;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
+  align-items: stretch;
   gap: var(--spacing);
   padding: var(--spacing);
 }
 
 .card-recipe {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: var(--spacing);
+  border: 2px solid red;
   padding: var(--spacing);
-  border-radius: 15px;
 }
 
 .card-recipe img {
