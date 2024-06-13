@@ -175,7 +175,6 @@ main {
 }
 
 .recipe {
-  border: 2px solid blue;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -185,7 +184,6 @@ main {
 }
 
 .card-recipe {
-  border: 2px solid red;
   padding: var(--spacing);
 }
 
