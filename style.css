@@ -241,9 +241,26 @@ main {
 /* FOOTER */
 
 footer {
+  min-height: 200px;
   padding: var(--spacing);
   display: flex;
-  flex-wrap: wrap;
-  gap: var(--spacing);
   justify-content: space-around;
+  align-items: center;
+  gap: var(--spacing);
+}
+
+footer ul {
+  height: 100px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: var(--spacing);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  font-weight: bold;
 }
