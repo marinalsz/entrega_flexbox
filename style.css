@@ -51,7 +51,7 @@ button {
 span {
   font-style: italic;
   font-size: 50px;
-  color: #ff5733;
+  color: red;
 }
 
 #recipes h2,
@@ -176,7 +176,7 @@ main {
 }
 
 #hero img:hover {
-  outline: 10px solid aliceblue;
+  outline: 5px dashed red;
 }
 
 @keyframes shadow-pop {
@@ -193,12 +193,12 @@ main {
 /*RECIPES*/
 
 #recipes {
-  min-height: 500px;
+  min-height: 450px;
   border-bottom: var(--border);
   padding: var(--spacing);
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   gap: var(--spacing);
   background-color: var(--background-img);
@@ -214,13 +214,19 @@ main {
 }
 
 .card-recipe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: var(--spacing);
+  gap: var(--spacing);
+  border: 2px solid red;
 }
 
 .card-recipe img {
   border: var(--border);
   border-radius: 15px;
   width: 90%;
+  height: auto;
 }
 
 /*TESTIMONIALS*/
