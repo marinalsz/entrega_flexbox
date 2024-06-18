@@ -197,7 +197,7 @@ main {
 /*GALLERY*/
 
 #gallery {
-  min-height: 450px;
+  min-height: 500px;
   border-bottom: var(--border);
   display: flex;
   flex-direction: column;
@@ -239,12 +239,12 @@ main {
 #testimonials {
   min-height: 500px;
   border-bottom: var(--border);
-  padding: var(--spacing);
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   gap: var(--spacing);
+  padding: var(--spacing);
 }
 
 .testimonial {
@@ -270,6 +270,7 @@ main {
 
 .card img {
   width: 50%;
+  height: auto;
   border: 2px solid var(--background);
   border-radius: 15px;
 }
