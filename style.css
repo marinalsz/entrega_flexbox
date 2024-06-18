@@ -48,6 +48,10 @@ button {
   cursor: pointer;
 }
 
+h3{
+  text-align: center;
+}
+
 .word {
   font-style: italic;
   font-size: 50px;
@@ -56,8 +60,8 @@ button {
 
 .rating{
   padding: var(--spacing);
-  color: transparent;  
-  text-shadow: 0 0 0 red;
+  color:transparent;
+  text-shadow: 0 0 0 rebeccapurple;
   letter-spacing: 3px;
 }
 
@@ -260,12 +264,9 @@ main {
   align-items: stretch;
   gap: var(--spacing);
   padding: var(--spacing);
-  flex-basis: 100px;
 }
 
 .card {
-  width: 40%;
-  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -275,10 +276,6 @@ main {
   padding: var(--spacing);
   border: var(--border);
   border-radius: 15px;
-}
-
-.card h3{
-  text-align: center;
 }
 
 .card img {
