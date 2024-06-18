@@ -54,9 +54,10 @@ span {
   color: red;
 }
 
-#recipes h2,
+#gallery h2,
 #testimonials h2 {
   text-transform: uppercase;
+  text-align: center;
   font-size: 30px;
   letter-spacing: 2px;
   padding: var(--spacing);
@@ -156,7 +157,7 @@ main {
   font-style: italic;
 }
 
-.info > p{
+.info > p {
   font-size: 20px;
 }
 
@@ -181,52 +182,56 @@ main {
 
 @keyframes shadow-pop {
   0% {
-    box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e,
+      0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
     transform: translateX(0) translateY(0);
   }
   100% {
-    box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+    box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e,
+      4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e,
+      8px -8px #3e3e3e;
     transform: translateX(-8px) translateY(8px);
   }
 }
 
-/*RECIPES*/
+/*GALLERY*/
 
-#recipes {
+#gallery {
   min-height: 450px;
   border-bottom: var(--border);
-  padding: var(--spacing);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: var(--spacing);
-  background-color: var(--background-img);
-}
-
-.recipe {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
+  align-content: center;
   gap: var(--spacing);
   padding: var(--spacing);
 }
 
-.card-recipe {
+#gallery > ul {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: var(--spacing);
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   gap: var(--spacing);
-  border: 2px solid red;
+  padding: var(--spacing);
 }
 
-.card-recipe img {
+#gallery li {
+  height: 300px;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+#gallery img {
   border: var(--border);
   border-radius: 15px;
-  width: 90%;
-  height: auto;
+  object-fit: cover;
+  max-height: 100%;
+  min-width: 100%;
+  transition: 1s;
+}
+
+#gallery img:hover {
+  transform: scale(1.2);
 }
 
 /*TESTIMONIALS*/
