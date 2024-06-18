@@ -48,10 +48,17 @@ button {
   cursor: pointer;
 }
 
-span {
+.word {
   font-style: italic;
   font-size: 50px;
   color: red;
+}
+
+.rating{
+  padding: var(--spacing);
+  color: transparent;  
+  text-shadow: 0 0 0 red;
+  letter-spacing: 3px;
 }
 
 #gallery h2,
@@ -253,9 +260,12 @@ main {
   align-items: stretch;
   gap: var(--spacing);
   padding: var(--spacing);
+  flex-basis: 100px;
 }
 
 .card {
+  width: 40%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -265,6 +275,9 @@ main {
   padding: var(--spacing);
   border: var(--border);
   border-radius: 15px;
+}
+
+.card h3{
   text-align: center;
 }
 
