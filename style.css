@@ -5,6 +5,7 @@
   --color: #21252a;
   --background-img: #ffffff;
   --spacing: 10px;
+  --border: 3px solid black;
 }
 
 * {
@@ -17,7 +18,7 @@ body {
   background-color: var(--background);
   color: var(--color);
   font-family: "Familjen Grotesk", sans-serif;
-  border: 3px solid black;
+  border: var(--border);
 }
 
 h1 {
@@ -53,7 +54,8 @@ span {
   color: #ff5733;
 }
 
-.recipes h2, .testimonials h2{
+#recipes h2,
+#testimonials h2 {
   text-transform: uppercase;
   font-size: 30px;
   letter-spacing: 2px;
@@ -64,7 +66,7 @@ span {
 
 header {
   height: 80px;
-  border-bottom: 3px solid black;
+  border-bottom: var(--border);
   padding: var(--spacing);
 }
 
@@ -104,7 +106,7 @@ header {
     padding: var(--spacing);
   }
 
-  .hidden ul{
+  .hidden ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -119,9 +121,9 @@ header {
 /*MAIN*/
 
 main {
-  border-bottom: 3px solid black;
+  border-bottom: var(--border);
   padding: var(--spacing);
-  min-height: 647px;
+  min-height: 650px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,7 +131,7 @@ main {
 
 /*HERO*/
 
-.hero {
+#hero {
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -161,18 +163,18 @@ main {
   gap: 50px;
 }
 
-.hero img {
+#hero img {
   background-color: var(--background-img);
-  border: 3px solid black;
+  border: var(--border);
   border-radius: 15px;
   width: 50%;
 }
 
-/*SECTION RECIPES*/
+/*RECIPES*/
 
-.recipes {
+#recipes {
   min-height: 500px;
-  border-bottom: 3px solid black;
+  border-bottom: var(--border);
   padding: var(--spacing);
   display: flex;
   flex-direction: column;
@@ -196,16 +198,16 @@ main {
 }
 
 .card-recipe img {
-  border: 3px solid black;
+  border: var(--border);
   border-radius: 15px;
   width: 90%;
 }
 
-/*SECTION TESTIMONIALS*/
+/*TESTIMONIALS*/
 
-.testimonials {
+#testimonials {
   min-height: 500px;
-  border-bottom: 3px solid black;
+  border-bottom: var(--border);
   padding: var(--spacing);
   display: flex;
   flex-direction: column;
@@ -215,7 +217,6 @@ main {
 }
 
 .testimonial {
-
   display: flex;
   justify-content: space-around;
   align-items: stretch;
@@ -231,7 +232,7 @@ main {
   background-color: var(--background-img);
   gap: var(--spacing);
   padding: var(--spacing);
-  border: 3px solid black;
+  border: var(--border);
   border-radius: 15px;
   text-align: center;
 }
