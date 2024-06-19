@@ -260,8 +260,9 @@ main {
 
 .testimonial {
   display: flex;
-  justify-content: space-around;
-  align-items: stretch;
+  justify-content: center;
+  align-content: center;
+  flex-grow: 1;
   gap: var(--spacing);
   padding: var(--spacing);
 }
@@ -269,7 +270,7 @@ main {
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   background-color: var(--background-img);
   gap: var(--spacing);
@@ -279,8 +280,7 @@ main {
 }
 
 .card img {
-  width: 50%;
-  height: auto;
+  width: 50px;
   border: 2px solid var(--background);
   border-radius: 15px;
 }
