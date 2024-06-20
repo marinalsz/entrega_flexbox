@@ -49,6 +49,12 @@ button {
 }
 
 h3{
+  font-size: 22px;
+  text-align: center;
+}
+
+p{
+  font-size: 17px;
   text-align: center;
 }
 
@@ -157,7 +163,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
   padding: var(--spacing);
   gap: var(--spacing);
   flex-grow: 1;
@@ -166,10 +171,7 @@ main {
 .info > h2 {
   font-size: 40px;
   font-style: italic;
-}
-
-.info > p {
-  font-size: 20px;
+  text-align: center;
 }
 
 .buttons {
@@ -259,10 +261,12 @@ main {
 }
 
 .testimonial {
+  width: 50%;
+  height: auto;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-content: center;
-  flex-grow: 1;
   gap: var(--spacing);
   padding: var(--spacing);
 }
@@ -272,6 +276,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-grow: 1;
   background-color: var(--background-img);
   gap: var(--spacing);
   padding: var(--spacing);
@@ -280,7 +285,9 @@ main {
 }
 
 .card img {
-  width: 50px;
+  min-width: 50px;
+  width: 20%;
+  height: auto;
   border: 2px solid var(--background);
   border-radius: 15px;
 }
